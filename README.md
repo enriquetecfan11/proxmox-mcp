@@ -2,6 +2,19 @@
 
 Un servidor MCP (Model Context Protocol) en TypeScript para conectarse a la API de Proxmox VE. Este servidor actúa como puente entre un LLM y la API de Proxmox, permitiendo ejecutar operaciones sobre máquinas virtuales (QEMU) y contenedores (LXC).
 
+> Documentación: la documentación completa está en [docs/index.md](./docs/index.md).
+
+## 📎 Enlaces rápidos
+
+- Documentación completa: [docs/index.md](./docs/index.md)
+- Inicio rápido: [docs/getting-started.md](./docs/getting-started.md)
+- Configuración: [docs/configuration.md](./docs/configuration.md)
+- Autenticación: [docs/authentication.md](./docs/authentication.md)
+- API HTTP: [docs/http-api.md](./docs/http-api.md)
+- Herramientas MCP (VM/LXC): [docs/tools.md](./docs/tools.md)
+- Despliegue: [docs/deployment.md](./docs/deployment.md)
+- Changelog: [docs/changelog.md](./docs/changelog.md)
+
 ## 🚀 Características
 
 - **Autenticación dual**: Soporte para API Token y Usuario/Contraseña
