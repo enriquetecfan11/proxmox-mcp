@@ -1,20 +1,20 @@
- # Solución de problemas
+# Solución de problemas
 
- ## Error de conexión SSL
+## Error de conexión SSL
 
  Configura:
 
- ```bash
- PROXMOX_REJECT_UNAUTHORIZED=false
- ```
+```bash
+PROXMOX_REJECT_UNAUTHORIZED=false
+```
 
- ## Error de autenticación
+## Error de autenticación
 
  - Verifica token/credenciales.
  - Asegura permisos adecuados.
  - Valida expiración de tokens.
 
- ## Error de permisos
+## Error de permisos
 
  Permisos mínimos recomendados:
 

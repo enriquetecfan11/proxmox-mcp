@@ -1,4 +1,4 @@
- # Servidor MCP (stdio)
+# Servidor MCP (stdio)
 
  El servidor MCP principal se ejecuta por stdio y expone herramientas MCP para VMs y LXC.
 

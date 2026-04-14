@@ -1,11 +1,11 @@
- # Autenticación
+# Autenticación
 
  `proxmox-mcp` soporta dos métodos:
 
  - API Token (recomendado)
  - Usuario y contraseña
 
- ## API Token (recomendado)
+## API Token (recomendado)
 
  1. Ingresa a la interfaz web de Proxmox.
  2. Ve a Datacenter → Permissions → API Tokens.
@@ -15,7 +15,7 @@
     - Privilege Separation: desmarcar si deseas usar permisos del usuario
  4. Coloca el token en `PROXMOX_TOKEN`.
 
- ## Usuario y contraseña
+## Usuario y contraseña
 
  Asegura permisos mínimos:
 

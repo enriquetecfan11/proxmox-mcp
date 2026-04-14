@@ -1,4 +1,4 @@
- # API HTTP
+# API HTTP
 
  El servidor HTTP expone endpoints REST para interactuar con Proxmox mediante `express`.
 
@@ -6,13 +6,13 @@
 
  > Nota: Varios endpoints aceptan `?node=<nombre>` y por defecto usan `pve` si no se envía.
 
- ## Endpoints
+## Endpoints
 
  - `GET /` — Información del servidor y endpoints disponibles.
  - `GET /health` — Estado de salud y conectividad con Proxmox.
  - `GET /tools` — Lista de herramientas MCP disponibles (VM y LXC).
 
- ### VMs
+### VMs
 
  - `GET /vms?node=pve` — Lista VMs en el nodo.
  - `GET /vms/:vmid?node=pve` — Configuración de una VM.
@@ -20,7 +20,7 @@
  - `POST /vms/:vmid/stop?node=pve` — Detiene VM.
  - `POST /vms/:vmid/restart?node=pve` — Reinicia VM.
 
- ### Contenedores LXC
+### Contenedores LXC
 
  - `GET /containers?node=pve` — Lista contenedores.
  - `GET /containers/:vmid?node=pve` — Configuración de un contenedor.
@@ -28,7 +28,7 @@
  - `POST /containers/:vmid/stop?node=pve` — Detiene contenedor.
  - `POST /containers/:vmid/restart?node=pve` — Reinicia contenedor.
 
- ### Nodos y servidor
+### Nodos y servidor
 
  - `GET /nodes` — Lista de nodos disponibles.
  - `GET /server/info` — Versión de Proxmox, nodos y configuración básica expuesta.

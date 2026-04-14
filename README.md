@@ -10,27 +10,27 @@ Permite gestionar máquinas virtuales (QEMU) y contenedores (LXC) desde un LLM c
 ### Enlaces rápidos
 
 #### Introducción
-- [Visión general](./docs/overview.md)
-- [Características](./docs/features.md)
-- [Requisitos](./docs/requirements.md)
-- [Inicio rápido](./docs/getting-started.md)
+- [Visión general](./docs/intro/overview.md)
+- [Características](./docs/intro/features.md)
+- [Requisitos](./docs/intro/requirements.md)
+- [Inicio rápido](./docs/intro/getting-started.md)
 
 #### Configuración y uso
-- [Configuración](./docs/configuration.md)
-- [Autenticación](./docs/authentication.md)
-- [Herramientas MCP](./docs/tools.md)
-- [API HTTP](./docs/http-api.md)
-- [Ejemplos de uso](./docs/examples.md)
+- [Configuración](./docs/setup/configuration.md)
+- [Autenticación](./docs/setup/authentication.md)
+- [Herramientas MCP](./docs/usage/tools.md)
+- [API HTTP](./docs/usage/http-api.md)
+- [Ejemplos de uso](./docs/usage/examples.md)
 
 #### Desarrollo
-- [Arquitectura](./docs/architecture.md)
-- [Estructura del proyecto](./docs/structure.md)
-- [Solución de problemas](./docs/troubleshooting.md)
+- [Arquitectura](./docs/dev/architecture.md)
+- [Estructura del proyecto](./docs/dev/structure.md)
+- [Solución de problemas](./docs/dev/troubleshooting.md)
 
 #### Despliegue
-- [Guía de despliegue](./docs/deployment.md)
-- [Changelog](./docs/changelog.md)
-- [Referencias](./docs/references.md)
+- [Guía de despliegue](./docs/ops/deployment.md)
+- [Changelog](./docs/ops/changelog.md)
+- [Referencias](./docs/ops/references.md)
 
 ## 🚀 Inicio rápido
 
