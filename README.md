@@ -19,6 +19,7 @@ Permite gestionar máquinas virtuales (QEMU) y contenedores (LXC) desde un LLM c
 - [Configuración](./docs/setup/configuration.md)
 - [Autenticación](./docs/setup/authentication.md)
 - [Herramientas MCP](./docs/usage/tools.md)
+- [Prompts para Claude](./docs/usage/claude-prompts.md)
 - [API HTTP](./docs/usage/http-api.md)
 - [Ejemplos de uso](./docs/usage/examples.md)
 

@@ -16,6 +16,7 @@ Punto de entrada: [`index.md`](./index.md).
 
 ### Uso
 - [Herramientas MCP (VM/LXC)](./usage/tools.md)
+- [Prompts para Claude Desktop](./usage/claude-prompts.md)
 - [API HTTP](./usage/http-api.md)
 - [Servidor MCP (stdio)](./usage/mcp-server.md)
 - [Ejemplos de uso](./usage/examples.md)

@@ -11,6 +11,8 @@
     "http": "node --loader ts-node/esm src/httpServer.ts",
     "dev:http": "node --loader ts-node/esm src/httpServer.ts",
     "mcp": "node --loader ts-node/esm src/index.ts",
+    "mcp:run": "./scripts/run-mcp.sh",
+    "mcp:config": "./scripts/run-mcp.sh --print-config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

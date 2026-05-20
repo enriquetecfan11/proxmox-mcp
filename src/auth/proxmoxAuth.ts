@@ -1,21 +1,29 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import https from 'https';
 import { ProxmoxConfig, AuthTicket, ProxmoxResponse } from '../types/index.js';
+
+function createHttpsAgent(rejectUnauthorized?: boolean): https.Agent | undefined {
+  if (rejectUnauthorized === false) {
+    return new https.Agent({ rejectUnauthorized: false });
+  }
+  return undefined;
+}
 
 export class ProxmoxAuth {
   private config: ProxmoxConfig;
   private httpClient: AxiosInstance;
   private authTicket?: AuthTicket;
+  private httpsAgent?: https.Agent;
 
   constructor(config: ProxmoxConfig) {
     this.config = config;
+    this.httpsAgent = createHttpsAgent(config.rejectUnauthorized);
     
     // Crear cliente HTTP con configuración base
     this.httpClient = axios.create({
       baseURL: `https://${config.host}:${config.port || 8006}/api2/json`,
       timeout: 30000,
-      httpsAgent: config.rejectUnauthorized === false ? {
-        rejectUnauthorized: false
-      } : undefined
+      httpsAgent: this.httpsAgent
     });
 
     // Configurar interceptores para manejo de autenticación
@@ -68,9 +76,7 @@ export class ProxmoxAuth {
             password: this.config.password
           },
           {
-            httpsAgent: this.config.rejectUnauthorized === false ? {
-              rejectUnauthorized: false
-            } : undefined
+            httpsAgent: this.httpsAgent
           }
         );
 

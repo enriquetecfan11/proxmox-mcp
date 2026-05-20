@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "proxmox": {
+      "command": "/Users/TU_USUARIO/Documents/projects/proxmox-mcp/scripts/run-mcp.sh"
+    }
+  }
+}
